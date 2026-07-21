@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>A股收盘复盘与新闻联播日报 | 2026-07-21 22:00</title>
+<meta name="description" content="2026年7月21日A股收盘复盘与央视新闻联播重点的证据驱动合并分析">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 · contrast/nav/footer/slop/tokens/responsive/mobile verified */
+/* Hallmark · genre: editorial · macrostructure: Long Document · theme: Newsprint · enrichment: none · nav: N6 · footer: Ft2
+ * audience: A股研究/交易读者 · use: 快速阅读、留档、核验来源 · tone: technical/editorial
+ * N6 knobs: issue-line=above · wordmark-size=3xl · rule=double
+ * F3 knobs: columns=source-defined · rule-density=every-row · numbers=tabular
+ * Ft2 knobs: order=credit/wordmark/links · separator=middot · density=dense
+ */
+:root {
+  --color-paper: oklch(97% 0.012 82);
+  --color-paper-2: oklch(94% 0.016 82);
+  --color-paper-3: oklch(90% 0.018 82);
+  --color-ink: oklch(20% 0.018 58);
+  --color-muted: oklch(47% 0.018 60);
+  --color-rule: oklch(72% 0.022 72);
+  --color-accent: oklch(48% 0.17 28);
+  --color-focus: oklch(58% 0.18 245);
+  --font-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Cascadia Mono", monospace;
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --text-xs: 0.72rem;
+  --text-sm: 0.84rem;
+  --text-base: 1rem;
+  --text-md: 1.18rem;
+  --text-lg: 1.45rem;
+  --text-xl: 1.82rem;
+  --text-2xl: 2.28rem;
+  --text-display: clamp(2rem, 5vw, 4.4rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --rule-hair: 1px;
+  --rule-heavy: 3px;
+  --radius-sm: 0.2rem;
+}
+* { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.72;
+  text-rendering: optimizeLegibility;
+}
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: var(--rule-hair);
+  text-underline-offset: var(--space-2xs);
+  overflow-wrap: anywhere;
+}
+a:hover { text-decoration-thickness: var(--rule-heavy); }
+a:active { color: var(--color-ink); }
+a[aria-disabled="true"] { color: var(--color-muted); cursor: not-allowed; pointer-events: none; }
+a:focus-visible, summary:focus-visible, .table-wrap:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: var(--space-2xs);
+}
+.masthead {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding: var(--space-md) clamp(var(--space-md), 5vw, var(--space-2xl)) 0;
+  text-align: center;
+}
+.issue-line {
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.mast-title {
+  margin: var(--space-sm) 0 var(--space-xs);
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.mast-subtitle {
+  margin: 0 auto var(--space-md);
+  max-width: 68ch;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+.mast-nav {
+  display: none;
+  gap: var(--space-lg);
+  justify-content: center;
+  padding-block: var(--space-sm);
+}
+.mast-nav a, .mobile-index a {
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.mast-nav a:hover, .mobile-index a:hover { color: var(--color-accent); }
+.double-rule {
+  height: var(--space-2xs);
+  margin: 0;
+  border: 0;
+  border-block: var(--rule-hair) solid var(--color-ink);
+}
+.mobile-index {
+  margin: var(--space-sm) 0;
+  text-align: start;
+}
+.mobile-index summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.mobile-index nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-md);
+  justify-content: center;
+  padding: var(--space-sm);
+  border-block-start: var(--rule-hair) solid var(--color-rule);
+}
+main {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding: var(--space-xl) clamp(var(--space-md), 5vw, var(--space-2xl)) var(--space-3xl);
+}
+article { min-width: 0; }
+article > p, article > ul, article > ol, article > blockquote {
+  max-width: 70ch;
+}
+article > p, article > ul, article > ol { margin-inline: 0 auto; }
+h2 {
+  max-width: 70ch;
+  margin: var(--space-2xl) auto var(--space-md) 0;
+  padding-block-start: var(--space-md);
+  border-block-start: var(--rule-hair) solid var(--color-rule);
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+h3 {
+  max-width: 70ch;
+  margin: var(--space-xl) auto var(--space-sm) 0;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  font-style: normal;
+}
+p { margin-block: 0 var(--space-md); }
+ul, ol {
+  padding-inline-start: var(--space-lg);
+  margin-block: 0 var(--space-lg);
+}
+li + li { margin-block-start: var(--space-xs); }
+strong { font-weight: 700; }
+blockquote {
+  margin: 0 auto var(--space-xl) 0;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-paper-2);
+  border-block: var(--rule-hair) solid var(--color-rule);
+  color: var(--color-muted);
+}
+blockquote p { margin: 0; }
+.table-wrap {
+  max-width: 100%;
+  margin-block: var(--space-lg) var(--space-xl);
+  overflow-x: auto;
+  border-block: var(--rule-hair) solid var(--color-ink);
+  scrollbar-color: var(--color-muted) var(--color-paper-2);
+}
+.spec-sheet {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-sm);
+}
+.spec-sheet th, .spec-sheet td {
+  padding: var(--space-sm) var(--space-md);
+  border-block-end: var(--rule-hair) solid var(--color-rule);
+  text-align: start;
+  vertical-align: top;
+}
+.spec-sheet th {
+  background: var(--color-paper-2);
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+.spec-sheet tr:last-child td { border-block-end: 0; }
+.spec-sheet td:nth-child(n+2) { font-variant-numeric: tabular-nums; }
+article > hr {
+  max-width: 10rem;
+  margin: var(--space-2xl) auto;
+  border: 0;
+  border-block-start: var(--rule-hair) solid var(--color-rule);
+}
+.footer {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding: var(--space-lg) clamp(var(--space-md), 5vw, var(--space-2xl)) var(--space-xl);
+  border-block-start: var(--rule-hair) solid var(--color-ink);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+.footer p { margin: 0; }
+.tnum { font-variant-numeric: tabular-nums; }
+@media (min-width: 40rem) {
+  .mobile-index { display: none; }
+  .mast-nav { display: flex; }
+  main { padding-block-start: var(--space-2xl); }
+  h2 { font-size: clamp(var(--text-xl), 3vw, var(--text-2xl)); }
+}
+@media (min-width: 60rem) {
+  article > p, article > ul, article > ol, article > blockquote, h2, h3 {
+    margin-inline-start: clamp(var(--space-xl), 8vw, var(--space-3xl));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+@media print {
+  body { background: var(--color-paper); color: var(--color-ink); font-size: 10.5pt; }
+  .mast-nav, .mobile-index { display: none; }
+  main { width: 100%; padding: var(--space-md); }
+  h2 { break-after: avoid; }
+  .table-wrap { overflow: visible; }
+  .spec-sheet { min-width: 0; }
+  a { color: var(--color-ink); text-decoration: none; }
+  a::after { content: " (" attr(href) ")"; font-size: var(--text-xs); overflow-wrap: anywhere; }
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <p class="issue-line">2026-07-21 · 北京时间 22:00 · 收盘与联播合刊</p>
+  <h1 class="mast-title">A股收盘复盘<br>与新闻联播日报</h1>
+  <p class="mast-subtitle">数据截至A股收盘及晚间官方披露。事实与市场推演分列；无法核验的指标保留为空，不作补写。</p>
+  <nav class="mast-nav" aria-label="报告目录"><a href="#section-0">摘要</a><a href="#section-1">市场</a><a href="#section-2">市场</a><a href="#section-3">市场</a><a href="#section-4">市场</a><a href="#section-5">市场</a><a href="#section-6">市场</a><a href="#section-7">联播</a><a href="#section-8">联播</a><a href="#section-9">策略</a><a href="#section-10">策略</a><a href="#section-11">策略</a></nav>
+  <details class="mobile-index">
+    <summary>目录</summary>
+    <nav aria-label="移动端报告目录"><a href="#section-0">摘要</a><a href="#section-1">市场</a><a href="#section-2">市场</a><a href="#section-3">市场</a><a href="#section-4">市场</a><a href="#section-5">市场</a><a href="#section-6">市场</a><a href="#section-7">联播</a><a href="#section-8">联播</a><a href="#section-9">策略</a><a href="#section-10">策略</a><a href="#section-11">策略</a></nav>
+  </details>
+  <hr class="double-rule" aria-hidden="true">
+</header>
+<main>
+  <article>
+    <blockquote>
+<p>数据截点：A股收盘数据截至15:00，盘后龙虎榜资料截至约18:30，央视网节目页截至22:15。研究辅助，不构成投资建议。</p>
+</blockquote>
+<h2 id="section-0">0. 今日一句话总结</h2>
+<p>7月21日A股上演放量V型修复，上证指数涨1.79%，创业板指涨7.05%，科创50涨10.73%，沪深成交2.9571万亿元、环比放量2549亿元。121股涨停、27股跌停，封板率92.37%，赚钱效应从前一日极弱状态快速修复，但指数单日振幅和科技板块涨幅过大，更接近“冰点后的强修复/局部高潮”，尚不能直接定义为新主升。半导体、算力硬件、光通信、PCB是最强方向，油气、电力、银行、白酒等防御板块承压。今晚《新闻联播》最重要的次日线索是节能降碳与新能源体系、交通基建数智化、万亿元民企再贷款落地；同时美伊冲突仍是油价、黄金、航运和风险偏好的外部扰动源。</p>
+<h2 id="section-1">1. 市场全景</h2>
+<div class="table-wrap" role="region" aria-label="数据表格" tabindex="0"><table class="spec-sheet"><thead><tr><th>指数</th><th style="text-align:right">收盘</th><th style="text-align:right">涨跌幅</th></tr></thead><tbody><tr><td>上证指数</td><td style="text-align:right">3864.37</td><td style="text-align:right">+1.79%</td></tr><tr><td>深证成指</td><td style="text-align:right">14264.29</td><td style="text-align:right">+4.81%</td></tr><tr><td>创业板指</td><td style="text-align:right">3685.97</td><td style="text-align:right">+7.05%</td></tr><tr><td>科创50</td><td style="text-align:right">1903.16</td><td style="text-align:right">+10.73%</td></tr><tr><td>北证50</td><td style="text-align:right">1079.04</td><td style="text-align:right">+3.24%</td></tr></tbody></table></div>
+<p>沪深两市成交额29571亿元，上一交易日27022亿元，增加2549亿元（约+9.43%）。Wind口径（沪深北）上涨3101家、下跌2301家、平盘121家；中新经纬另一口径为上涨3107家、下跌2301家，差异可能来自样本及停牌/新股处理，本文采用有平盘项的Wind口径。涨停121家、跌停27家。各指数“成交额”容易混淆成分股成交与交易所成交，当前公开报道未逐项给出统一可比口径，故不编造分指数成交额。</p>
+<p>来源：澎湃新闻/Wind、东方财富Choice、中新经纬；时间均为2026-07-21收盘后。</p>
+<h2 id="section-2">2. 今天赚钱效应</h2>
+<ul>
+<li>涨停121家、跌停27家；另有10股盘中触及涨停但未封住。按“炸板数÷（涨停数+炸板数）”计算，炸板率约7.63%，对应Choice披露封板率92.37%。</li>
+<li>最高近期强势股：九安医疗6天4板。该表述不等于“4连板”；严格连续连板高度、最高连续板股票当前公开文本无法直接核验。</li>
+<li>晋级率、昨日涨停表现、昨日连板表现：截至报告时间暂无法从一致且可复核的完整股票池直接核验。</li>
+<li>赚钱效应：★★★★☆。依据是涨停扩容、跌停明显收敛、封板率高、科创与创业板大涨；扣一星源于单日修复过猛、2301家仍下跌且高波动未消失。</li>
+</ul>
+<h2 id="section-3">3. 情绪周期判断</h2>
+<p>情绪星级★★★★☆；阶段判断为“冰点后强修复，局部高潮”，不是已经确认的主升。证据：成交放大约9.4%，成长指数与121只涨停形成指数—题材共振，炸板率仅约7.6%；半导体、CPO、存储、PCB呈现大宽度。但前一日市场仍有大面积跌停，今天仍有27股跌停，且科创50单日上涨10.73%，说明短线筹码从恐慌到亢奋切换过快。次日若核心股高开低走、涨停宽度显著收缩或成交不能维持2.7万亿元以上，应把今天视为超跌修复而非主升确认。</p>
+<h2 id="section-4">4. 热点板块复盘</h2>
+<ol>
+<li><strong>半导体/国产芯片/存储</strong>：最强主线。设备、晶圆、存储、封测均有涨停扩散，科创50大涨10.73%；核心观察中芯国际、中微公司、兆易创新、北方华创，弹性端包括中科飞测、长川科技、格科微。属于前期急跌后的首日强修复，短线已局部高潮，不宜把单日大阳线机械视为真突破。次日验证：核心高开后承接、板块涨停宽度、科创50不快速回吐、成交继续放量。失效：龙头开盘即兑现、量价背离或指数跌回今日阳线中位。</li>
+<li><strong>算力硬件/光通信/CPO/PCB</strong>：与芯片共振，光迅科技、中际旭创、新易盛、紫光股份等得到资金关注。光迅科技龙虎榜显示机构大额净买入，但行业内部仍有机构分歧。次日应看光迅科技能否承接、CPO与PCB是否从个别龙头扩散；若仅权重冲高、跟风回落，则是假突破风险上升。</li>
+<li><strong>机器人、新能源车、消费电子</strong>：随成长风格普涨，当前更像主线外溢补涨，需看是否出现独立催化与连续资金，而非追随指数的一次性脉冲。</li>
+<li><strong>弱势方向</strong>：油气、电力、银行、白酒、猪肉等回落。部分是风险偏好回升后的防御交易退潮；美伊冲突仍在，油气不能仅凭单日下跌判定趋势结束，但若油价未进一步上冲且资金继续流出，短线承压延续。</li>
+</ol>
+<h2 id="section-5">5. 主力资金变化</h2>
+<p>Wind实时监测口径：电子行业净流入逾378亿元，计算机逾97亿元，有色金属、通信均逾80亿元，电力设备逾78亿元；银行、房地产、食品饮料均净流出逾10亿元，石油石化、建筑装饰也为净流出。概念口径中，5G应用、人工智能、消费电子、芯片均净流入逾200亿元，东数西算、自主可控、光通信逾100亿元；大金融净流出逾26亿元，白酒、特高压净流出逾10亿元。</p>
+<p>连续性判断：电子、AI、芯片主要是今天的剧烈回补，尚不足以证明持续流入；数字货币连续13日、中药连续10日、家电连续9日净流入，但连续流入并不等于次日上涨。不同平台对“主力资金”的大单划分和回溯修正不同，只在同一Wind口径内比较。</p>
+<h2 id="section-6">6. 今日龙虎榜</h2>
+<ul>
+<li>光迅科技：机构席位买入15.73亿元、卖出8.96亿元、净买入6.77亿元；深股通买入9.45亿元、卖出9.64亿元。与光通信主线一致；公开报道未列出其完整上榜原因，暂不补写。</li>
+<li>雅克科技：因日振幅22.22%上榜；深股通买入4.71亿元、卖出3.85亿元、净买入8553万元，机构合计净卖出1.33亿元。与半导体主线一致，但机构与北向席位方向分化。</li>
+<li>惠科股份：因日振幅22.18%、换手率27.90%上榜；机构买入2.86亿元、卖出3.03亿元、净卖出1683万元。属于显示/科技链高波动标的。</li>
+<li>第一财经汇总口径显示，53只股票出现机构席位，22只机构净买入、31只净卖出；机构净买入前三为光迅科技、格科微、长川科技，净额6.77亿、3.11亿、2.54亿元。另一数据商统计38只、机构合计净卖出23.73亿元，数量与部分净额明显冲突，推测因席位识别、合并规则或统计范围不同，故不强行拼接。</li>
+</ul>
+<p>未发现可靠证据将具体营业部映射为章盟主、方新侠、炒股养家、赵老哥等昵称，本文不作游资身份归因。</p>
+<h2 id="section-7">7. 今晚新闻联播要点</h2>
+<p>以下均为央视网2026-07-21节目页或分条文字稿中的官方事实；“市场影响”仅在下一节推演。</p>
+<ol>
+<li><strong>节能降碳</strong>：可再生能源装机占比超过六成，非化石能源消费占比达22%；全国清洁能源行业产值15.4万亿元。到2030年，力争单位GDP二氧化碳排放再降17%、单位GDP能耗再降约10%。</li>
+<li><strong>交通强国</strong>：到2030年基本建成现代化综合交通运输体系；国家综合立体交通网主骨架建成率由91%提升至95%，实施约8万公里交通基础设施更新和数智化改造，新改建农村公路50万公里，提升约1000个主要货运节点多式联运功能。</li>
+<li><strong>民营经济融资</strong>：央行新设1万亿元民营企业再贷款，首次将民营中型企业明确纳入支持范围；截至目前余额已超7600亿元。</li>
+<li><strong>家政服务</strong>：商务部推出19项措施，聚焦居家养老、长期护理保险居家服务、职业培训、智慧场景、信用平台和价格监管。</li>
+<li><strong>育儿补贴</strong>：2026年度已审核发放2516万人，国家基础标准为每孩每年3600元、至年满3周岁。</li>
+<li><strong>入境游</strong>：暑期入境游预订量同比增长超两成；上半年入境外国人2291.4万人次、同比+20.4%，77.7%享受免签入境便利。</li>
+<li><strong>地缘风险</strong>：节目报道美军连续第10天打击伊朗目标并加大中东部署，同时调解方提出10天停火建议，局势仍有双向不确定性。</li>
+</ol>
+<h2 id="section-8">8. 新闻到市场的逻辑传导</h2>
+<div class="table-wrap" role="region" aria-label="数据表格" tabindex="0"><table class="spec-sheet"><thead><tr><th>新闻事实</th><th>影响变量</th><th>受益/承压行业及A股映射</th><th>次日验证信号</th><th>失效条件</th></tr></thead><tbody><tr><td>节能降碳硬指标、能源结构优化</td><td>设备更新、能效投资、绿电消纳</td><td>节能设备、电网、新能源车、风光储；高能耗落后产能承压</td><td>电力设备由今日78亿净流入继续扩散，出现成交与订单公告验证</td><td>仅口号交易、行业价格战恶化、政策节奏低于预期</td></tr><tr><td>8万公里更新数智化、50万公里农村公路</td><td>基建投资与交通数字化需求</td><td>轨交装备、工程机械、智能交通、物流信息化</td><td>基建/交通板块放量并有项目或订单公告</td><td>财政资金和项目开工不及预期</td></tr><tr><td>1万亿元民企再贷款、余额超7600亿</td><td>中型民企信用与融资成本</td><td>民营制造、城商行/股份行的优质普惠与中型企业客户</td><td>民企指数相对强、信用利差改善、贷款投放披露</td><td>资金未形成有效投放或需求不足；不等于直接利好所有民企股</td></tr><tr><td>家政19条、育儿补贴、入境游增长</td><td>服务消费、居民现金流、文旅客流</td><td>家政平台、养老服务、母婴、景区酒店、支付服务</td><td>客流/订单/同店数据兑现，板块非一日脉冲</td><td>补贴边际消费倾向低、估值提前透支</td></tr><tr><td>美伊冲突与停火建议并存</td><td>油价、运价、避险溢价</td><td>油气、黄金、航运或受益；航空、化工下游成本承压</td><td>原油与黄金夜盘、霍尔木兹运输状态</td><td>停火落地、供给未受扰，风险溢价迅速回吐</td></tr></tbody></table></div>
+<h2 id="section-9">9. 每日评分</h2>
+<div class="table-wrap" role="region" aria-label="数据表格" tabindex="0"><table class="spec-sheet"><thead><tr><th>维度</th><th>星级</th><th>一句话理由</th></tr></thead><tbody><tr><td>指数</td><td>★★★★★</td><td>五大指数全涨，成长指数显著领跑</td></tr><tr><td>热点</td><td>★★★★☆</td><td>芯片—算力链宽度极强，但单日已过热</td></tr><tr><td>风险</td><td>★★★☆☆</td><td>V型反弹降低流动性风险，外部冲突和高波动仍在</td></tr><tr><td>赚钱效应</td><td>★★★★☆</td><td>121涨停、封板率92.37%，但仍有27跌停</td></tr><tr><td>资金连续性</td><td>★★★☆☆</td><td>今日回补强，科技持续性尚待第二日确认</td></tr><tr><td>政策催化</td><td>★★★★☆</td><td>稳市座谈、再贷款、节能降碳与交通投资线索密集</td></tr><tr><td>次日可操作性</td><td>★★★☆☆</td><td>有主线但追高赔率下降，更适合看承接后择强</td></tr></tbody></table></div>
+<h2 id="section-10">10. 次日条件式仓位建议</h2>
+<ul>
+<li><strong>进攻条件（60%—75%）</strong>：科创50/创业板不低开深杀，半导体核心高开后有换手承接，上午成交维持今日同期八成以上，涨停家数继续扩散且跌停不反弹。重点观察芯片设备、存储、光通信、PCB的前排，不追一致性过高的后排。</li>
+<li><strong>中性条件（40%—60%）</strong>：指数震荡、科技分化但无系统性跌停扩散；优先保留低位有业绩/订单验证的龙头，关注交通数智化、节能设备、服务消费是否形成独立分支。</li>
+<li><strong>防守条件（20%—35%）</strong>：科技核心开盘兑现、科创50快速回吐今日阳线一半以上、成交明显缩量或跌停家数重新扩张。回避高位无业绩支撑题材、单日暴涨后放量滞涨股；地缘升级时注意航空、化工下游成本风险。</li>
+</ul>
+<p>仓位上调必须同时看到“指数承接+主线宽度+成交持续”，只满足政策标题不构成加仓理由。</p>
+<h2 id="section-11">11. 来源与冲突说明</h2>
+<ul>
+<li>央视网《新闻联播》完整节目：<a href="https://tv.cctv.com/2026/07/21/VIDEE5isjDLlQsaBNYZPXfzR260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEE5isjDLlQsaBNYZPXfzR260721.shtml</a></li>
+<li>央视网节能降碳：<a href="https://tv.cctv.com/2026/07/21/VIDEdWaANn0x9nbjTWimAK0o260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEdWaANn0x9nbjTWimAK0o260721.shtml</a></li>
+<li>央视网交通强国：<a href="https://tv.cctv.com/2026/07/21/VIDEel3NGnt8ds3J4SOIU0yj260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEel3NGnt8ds3J4SOIU0yj260721.shtml</a></li>
+<li>央视网民企再贷款：<a href="https://tv.cctv.com/2026/07/21/VIDEfqnZx8HYikU8kPWiH4of260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEfqnZx8HYikU8kPWiH4of260721.shtml</a></li>
+<li>央视网家政服务：<a href="https://tv.cctv.com/2026/07/21/VIDEJaq7Fn58lwWzTdH5ZsY2260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEJaq7Fn58lwWzTdH5ZsY2260721.shtml</a></li>
+<li>央视网育儿补贴：<a href="https://tv.cctv.com/2026/07/21/VIDEXJ6eU8ze57xlFbw8cFQi260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEXJ6eU8ze57xlFbw8cFQi260721.shtml</a></li>
+<li>央视网入境游：<a href="https://tv.cctv.com/2026/07/21/VIDEBlxW3PZiNAhHr0caE96e260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEBlxW3PZiNAhHr0caE96e260721.shtml</a></li>
+<li>央视网美伊局势：<a href="https://tv.cctv.com/2026/07/21/VIDEIW3ae0tsSTABrthn1m6O260721.shtml" target="_blank" rel="noopener noreferrer">https://tv.cctv.com/2026/07/21/VIDEIW3ae0tsSTABrthn1m6O260721.shtml</a></li>
+<li>证监会座谈会：<a href="https://www.csrc.gov.cn/csrc/c100028/c7646684/content.shtml" target="_blank" rel="noopener noreferrer">https://www.csrc.gov.cn/csrc/c100028/c7646684/content.shtml</a></li>
+<li>东方财富Choice涨停复盘：<a href="https://finance.eastmoney.com/a/202607213815570118.html" target="_blank" rel="noopener noreferrer">https://finance.eastmoney.com/a/202607213815570118.html</a></li>
+<li>澎湃/Wind收盘数据：<a href="https://www.thepaper.cn/newsDetail_forward_33627917" target="_blank" rel="noopener noreferrer">https://www.thepaper.cn/newsDetail_forward_33627917</a></li>
+<li>第一财经龙虎榜：<a href="https://www.yicai.com/news/103286156.html" target="_blank" rel="noopener noreferrer">https://www.yicai.com/news/103286156.html</a> 、<a href="https://www.yicai.com/news/103286283.html" target="_blank" rel="noopener noreferrer">https://www.yicai.com/news/103286283.html</a></li>
+<li>证券时报市场与资金数据：<a href="https://finance.ifeng.com/c/8uwT9qRTr3h" target="_blank" rel="noopener noreferrer">https://finance.ifeng.com/c/8uwT9qRTr3h</a></li>
+</ul>
+<p>冲突处理：上涨家数采用Wind含平盘项的沪深北口径；龙虎榜机构统计因数据商席位识别与合并规则不同，不跨源拼接总数或净额；严格连续板高度、晋级率、昨日涨停/连板表现未获得完整可复核股票池，明确标为暂无法核验。</p>
+  </article>
+</main>
+<footer class="footer">
+  <p>研究辅助 · 不构成投资建议 · 原始来源链接均保留 · 生成时间 2026-07-21 22:00 CST</p>
+</footer>
+</body>
+</html>
